@@ -6,7 +6,7 @@ GPTViewerSetup.zip SHA-256 File hash
 
 CCDE5F7920721DEC82847A186C871C85CBE98E560FC4752532D33E718A784388
 
-Please always check the file hash after downloading. If it is does not match please contact me!
+Please always check the file hash after downloading. If it is does not match please delete the file and contact me!
 
 
 - Requirements
