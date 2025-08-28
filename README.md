@@ -2,6 +2,13 @@
 
 Browse your downloaded ChatGPT conversations with this app. You can download it from Miscosoft Store or you can download <a href="GPTViewerSetup.zip">here</a> the setup. Just open the <b>conversation.json</b> file, what you downloaded from OpenAI.
 
+GPTViewerSetup.zip SHA-256 File hash 
+
+CCDE5F7920721DEC82847A186C871C85CBE98E560FC4752532D33E718A784388
+
+Please always check the file hash after downloading. If it is does not match please contact me!
+
+
 - Requirements
 > Windows 10 / 11 <br>
 > .NET 8.0
