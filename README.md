@@ -1,6 +1,6 @@
 ## ChatGPT Conversation Viewer
 
-Browse your downloaded ChatGPT conversations with this app. You can download it from Miscosoft Store. Just open the <b>conversation.json</b> file, what you downloaded from OpenAI.
+Browse your downloaded ChatGPT conversations with this app. You can download it from Miscosoft Store or you can download <a href="GPTViewerSetup.zip">here</a> the setup. Just open the <b>conversation.json</b> file, what you downloaded from OpenAI.
 
 - Requirements
 > Windows 10 / 11 <br>
