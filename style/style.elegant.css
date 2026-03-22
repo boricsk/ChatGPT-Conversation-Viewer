@@ -1,0 +1,138 @@
+
+/* Light/Dark theme tokens */
+:root{
+  --bg: #fcfbf9;
+  --text: #1b1b1a;
+  --muted-text: #6b7280;
+  --primary: #8b5cf6;
+  --surface: #ffffff;
+  --surface-2: #faf7ff;
+  --border: #e7e5e4;
+  --accent: #f3e8ff;
+  --radius: 8px;
+  --shadow: 0 4px 16px rgba(0,0,0,.06);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #121012;
+    --text: #f5f5f4;
+    --muted-text: #d6d3d1;
+    --primary: #c4b5fd;
+    --surface: #1b191b;
+    --surface-2: #221f22;
+    --border: #2d2a2e;
+    --accent: color-mix(in oklab, #c4b5fd, #121012 80%);
+  }
+}
+
+/* Optional forced theme override */
+.theme-dark{
+  --bg: #121012;
+  --text: #f5f5f4;
+  --muted-text: #d6d3d1;
+  --primary: #c4b5fd;
+  --surface: #1b191b;
+  --surface-2: #221f22;
+  --border: #2d2a2e;
+  --accent: color-mix(in oklab, #c4b5fd, #121012 80%);
+}
+
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    background-image: radial-gradient(900px 400px at 80% -10%, rgba(139,92,246,.10), transparent 65%), radial-gradient(800px 400px at -10% 10%, rgba(236,72,153,.08), transparent 65%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sytemprompt {
+    font-style: italic;
+    font-size: 12px;
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--accent);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+.userprompt {
+    font-style: italic;
+    font-size: 12px;
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--text);
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
+pre {
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--surface-2);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+code, pre code {
+    font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    border-color: var(--primary);
+    background: color-mix(in oklab, var(--primary), transparent 85%);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    color: var(--text);
+}
+
+th {
+    background-color: var(--surface-2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--muted-text);
+}

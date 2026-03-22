@@ -1,0 +1,138 @@
+
+/* Light/Dark theme tokens */
+:root{
+  --bg: #fef6f9;
+  --text: #1f2937;
+  --muted-text: #6b7280;
+  --primary: #ec4899;
+  --surface: #fff7fb;
+  --surface-2: #fdf2f8;
+  --border: #f5d0ea;
+  --accent: #fde2f2;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(236,72,153,.15);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #140f14;
+    --text: #fce7f3;
+    --muted-text: #fbcfe8;
+    --primary: #f472b6;
+    --surface: #1a141b;
+    --surface-2: #201a22;
+    --border: #3b2a3d;
+    --accent: color-mix(in oklab, #f472b6, #140f14 80%);
+  }
+}
+
+/* Optional forced theme override */
+.theme-dark{
+  --bg: #140f14;
+  --text: #fce7f3;
+  --muted-text: #fbcfe8;
+  --primary: #f472b6;
+  --surface: #1a141b;
+  --surface-2: #201a22;
+  --border: #3b2a3d;
+  --accent: color-mix(in oklab, #f472b6, #140f14 80%);
+}
+
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    background-image: radial-gradient(900px 500px at 100% -20%, rgba(236,72,153,.15), transparent 60%), radial-gradient(900px 400px at -10% 0%, rgba(59,130,246,.10), transparent 60%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sytemprompt {
+    font-style: italic;
+    font-size: 12px;
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--accent);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+.userprompt {
+    font-style: italic;
+    font-size: 12px;
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--text);
+    text-shadow: 0 2px 0 rgba(255,255,255,.8);
+}
+
+pre {
+    padding: 14px 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin: 1em 0;
+    background-color: var(--surface-2);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+code, pre code {
+    font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-color .2s ease, color .2s ease, background .2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    border-color: var(--primary);
+    background: color-mix(in oklab, var(--primary), transparent 85%);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    color: var(--text);
+}
+
+th {
+    background-color: var(--surface-2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--muted-text);
+}
