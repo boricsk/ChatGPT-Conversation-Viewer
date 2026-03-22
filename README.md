@@ -33,7 +33,7 @@ You can customize the chat window using CSS. Here you need to set which CSS file
 
 Select a style file and click "Save". The app will work properly after restarting.
 
-If you didn'f found the css files you can download some style files here: 
+If you didn'f found the css files you can download some style files here: <a href="https://github.com/boricsk/ChatGPT-Conversation-Viewer/tree/main/style" >Styles</a>
 
 #### Main screen
 
